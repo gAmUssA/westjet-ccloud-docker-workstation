@@ -1,0 +1,22 @@
+{
+	"type": "STRUCT",
+	"name": "com.westjet.tiess.avro.models.TAAccountingWVIPayments",
+	"fieldSchemas": {
+		"dateOfIssue": {
+			"type": "STRING",
+			"isOptional": false
+		},
+		"agentCode": {
+			"type": "STRING",
+			"isOptional": false
+		},
+		"collection": {
+			"type": "FLOAT32",
+			"isOptional": false
+		},
+		"commission": {
+			"type": "FLOAT32",
+			"isOptional": false
+		}
+	}
+}
