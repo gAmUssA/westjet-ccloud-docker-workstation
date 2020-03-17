@@ -72,7 +72,11 @@ services:
       #SCHEMA_REGISTRY_AUTHENTICATION_REALM: SchemaRegistry
 
   connect:
-    image: confluentinc/cp-kafka-connect-base:${TAG}      
+    build:
+      context: ./connect
+      dockerfile: Dockerfile
+      args:
+        TAG: ${TAG}      
     hostname: connect
     container_name: connect
     depends_on:
@@ -82,8 +86,6 @@ services:
     ports:
       - "8083:8083"
     volumes:
-      - ./connect/launch.sh:/etc/confluent/docker/launch
-      - ./connect/wait-for-it.sh:/etc/confluent/docker/wait-for-it
       - ./sample-data:/mnt/sample-data
       - ./connect/connectors:/mnt/connectors
       - ./connector.properties:/etc/kafka/connector.properties
