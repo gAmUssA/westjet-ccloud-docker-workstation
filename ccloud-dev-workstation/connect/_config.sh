@@ -18,5 +18,3 @@ export SCHEMA=TAAccountingWVIPayments
 
 #Connector Template
 export CONNECTOR_TEMPLATE=template_connector.properties
-
-source _funcs.sh
