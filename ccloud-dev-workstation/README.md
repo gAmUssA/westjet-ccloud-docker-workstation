@@ -15,10 +15,10 @@
  * [Installing Docker Dekstop for Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 3. WSL Java Env
  * `sudo apt-get install openjdk-11-jdk`
- * **Note:** The contained script [install_deps.sh](windows_wsl/install_deps.sh) will install Java for you
+ * **Note:** The contained script [install_deps.sh](windows_wsl/install_all_deps.sh) will install Java for you
 4. WSL Docker Dependencies
  * [Installing Docker & Docker Compose](https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly)
- * **Note:** The contained script [install_deps.sh](windows_wsl/install_deps.sh) will install the needed dependencies and WSL adjustments.
+ * **Note:** The contained script [install_deps.sh](windows_wsl/install_all_deps.sh) will install the needed dependencies and WSL adjustments.
    You will still be required however to enable TCP access to docker as described in the link above.
 
 ## Initial Setup
