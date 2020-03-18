@@ -93,9 +93,9 @@ services:
     # volumes:
     #   - ./sample-data:/mnt/sample-data
     #   - ./connect/connectors:/mnt/connectors
-    volumes:
-      - ./sample-data:/mnt/sample-data
-      - ./connect/connectors:/mnt/connectors
+    # volumes:
+    #   - ./sample-data:/mnt/sample-data
+    #   - ./connect/connectors:/mnt/connectors
       # - type: bind
       #   source: ./sample-data
       #   target: /mnt/sample-data
@@ -155,5 +155,5 @@ services:
       CONNECT_SCHEMA_REGISTRY_BASIC_AUTH_USER_INFO: "schemaregistry:schemaregistry-secret"
       CONNECT_BASIC_AUTH_CREDENTIALS_SOURCE: USER_INFO
       CONNECT_BASIC_AUTH_USER_INFO: "schemaregistry:schemaregistry-secret"
-    # command:
-    #   - load-sample-data-docker.sh
+    command:
+      - load-sample-data-docker.sh
